@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+    let a = ""
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            a += "*"
+        }
+        a += "<br>"
+    }
+    document.write("</br>" + a)
+
+    let a2 = ""
+    for (let i = 1; i <= 5; i++) {
+        for (let j = i; j <= 5; j++) {
+            a2 += "*"
+        }
+        a2 += "<br>"
+    }
+    document.write("</br>" + a2)
+
+    let a3 = ""
+    for (let i = 1; i <= 5; i++) {
+        for (let k = 5; k > i; k--) {
+            a3 += "&ensp;"
+        }
+        for (let j = 1; j <= i; j++) {
+            a3 += "*"
+
+        }
+        a3 += "<br>"
+    }
+    document.write("</br>" + a3)
+
+    let a4 = ""
+    for (let i = 1; i <= 5; i++) {
+        for (let k = i; k > 1; k--) {
+            a4 += "0"
+        }
+        for (let j = i; j <= 5; j++) {
+            a4 += "*"
+        }
+        a4 += "<br>"
+    }
+    document.write("</br>" + a4)
+
+</script>
+</body>
+</html>

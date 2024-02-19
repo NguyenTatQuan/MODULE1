@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhap snt'));
+    function ktsnt(a) {
+        let count = 0  //đếm số lượng ước
+        if (a < 2) {
+            alert("ko phai la snt")
+        }
+        for (let i = 1; i <= a; i++) { //trong khoảng
+            if (a % i === 0) { //có bao nhiêu ước
+                count++ //ước
+            }
+        }
+        if (count === 2) { // 2 ước (nó và chính nó )
+            alert("la snt")
+
+        } else {
+            alert("khong phai la snt")
+        }
+    }
+
+    ktsnt(a)
+</script>
+</body>
+</html>

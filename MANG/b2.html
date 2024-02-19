@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [3, 7, 11, 2, 8, 15, 6, 9, 5, 13];
+
+    // Tìm phần tử có giá trị lớn nhất và vị trí của nó
+    let max = arr[0];
+    let maxa = 0;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            maxa = i;
+        }
+    }
+    // Hiển thị phần tử có giá trị lớn nhất và vị trí của nó
+    document.write("Phần tử có giá trị lớn nhất là " + max + " tại vị trí " + maxa);
+</script>
+</body>
+</html>
